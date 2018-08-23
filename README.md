@@ -9,6 +9,7 @@ project_raw_data/
 survey_raw_data/
     google_forms_survey.pdf
     google_forms_survey.csv
+    question_index_survey.csv
 
 RQ1_taxonomy_mcr/
     RQ1_inception_phase/
@@ -19,6 +20,8 @@ RQ1_taxonomy_mcr/
         Q1.2_evaluation_survey.csv
         cram_classified.csv
         cram.pdf
+
+    Q1.4_Q1.5_evaluation_survey.xlsx
 
 RQ2_automation_needs/
     Q2.1-Q2.5_evaluation_survey.xlsx
@@ -32,10 +35,10 @@ RQ2_automation_needs/
 - `gerrit_review_comments.csv` - information about all in-line review comments used for this paper
 - `gerrit_review_changes.csv` - information about all patches analyzed that contain the in-line comments
 
-
 **survey_raw_data/** contains information about the survey conducted for the paper.
 - `google_forms_survey.pdf` - the distributed *Google Forms* of our survey
 - `google_forms_survey.csv` - all survey answers obtained from 52 survey participants
+- `question_index_survey.csv` - table of IDs given to each participant-question pair for every evaluated question to trace back the feeback.
 
 **RQ1_taxonomy_mcr/** contains information and data about the elicited taxonomies in our paper (RQ1).
 - **RQ1_inception_phase/**
@@ -45,6 +48,10 @@ RQ2_automation_needs/
     - `Q1.2_evaluation_survey.csv` - relevant survey feedback with additional taxonomy categories integrated into *CRAM*
     - `cram_classified.csv` - classified review comments (`gerrit_review_comments.csv`) into *CRAM*
     - `cram.pdf` - *CRAM* taxonomy
+- `Q1.4_Q1.5_evaluation_survey.xlsx` - evaluated feedback of Question Q1.4 and Q1.5 in the survey. Containes the following sheets:
+    - **aggregated by category**: Aggregated occurances of developer feedbacks grouped by change type.
+    - **Q1.4_all_findings**: All encoded feedback used for the evaluation of question Q1.4. Red represent in the feedback-text where the corresponding category was distilled from.
+    - **Q1.5_all_findings**: All encoded feedback used for the evaluation of question Q1.5. Red represent in the feedback-text where the corresponding category was distilled from.
 
 **RQ2_automation_needs/** contains the encoded evaluation of the survey question Q2.1-2.7 for RQ2
 - `Q2.1-Q2.5_evaluation_survey.xlsx` - the encoded evaluation of the survey questions Q2.1-Q2.5 (used for the *Automation Needs* Section in the paper) and contains the following sheets:
@@ -57,7 +64,7 @@ RQ2_automation_needs/
     - **unique Findings**: As one participant could mention the same categories/solutions in multiple feedbacks, the following matrix is cleaned of any duplication of participant answers. Multiple feedbacks containing the same information by one participant were removed, leaving only distinct occurances.
     - **aggregated by low-level taxonomy**: Aggregated mentionings of approaches/data by developers in the survey grouped by low-level taxonomy category.
     - **aggregated by high-level taxonomy**: Aggregated mentionings of approaches/data by developers in the survey grouped by high-level taxonomy category.
-- `Q2.1-Q2.7_question_index.csv` - table of IDs given to each participant-question pair for Q2.1-Q2.7 in order to trace back the feeback. 
+ 
 ## References
 [1] Moritz Beller, Alberto Bacchelli, Andy Zaidman, and Elmar Juergens. 2014. Modern code reviews
  in open-source projects: which problems do they fix?. In Proceedings of the 11th Working Conference on Mining Software Repositories (MSR 2014). ACM, New York, NY, USA, 202-211. DOI: http://dx.doi.org/10.1145/2597073.2597082   
