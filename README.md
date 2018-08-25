@@ -48,7 +48,7 @@ RQ2_automation_needs/
     - `Q1.2_evaluation_survey.csv` - relevant survey feedback with additional taxonomy categories integrated into *CRAM*
     - `cram_classified.csv` - classified review comments (`gerrit_review_comments.csv`) into *CRAM*
     - `cram.pdf` - *CRAM* taxonomy
-- `Q1.4_Q1.5_evaluation_survey.xlsx` - evaluated feedback of Question Q1.4 and Q1.5 in the survey. Containes the following sheets:
+- `Q1.4_Q1.5_evaluation_survey.xlsx` - evaluated feedback of Question Q1.4 and Q1.5 in the survey. Contains the following sheets:
     - **aggregated by category**: Aggregated occurances of developer feedbacks grouped by change type.
     - **Q1.4_all_findings**: All encoded feedback used for the evaluation of question Q1.4. Red represent in the feedback-text where the corresponding category was distilled from.
     - **Q1.5_all_findings**: All encoded feedback used for the evaluation of question Q1.5. Red represent in the feedback-text where the corresponding category was distilled from.
